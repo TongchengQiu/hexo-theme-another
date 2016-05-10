@@ -1,0 +1,85 @@
+@require "../_vendor/variables"
+
+
+.header
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background: url(/images/bg.jpg) center / cover;
+  .mask
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(55,68,84,.82);
+    z-index: 1;
+  .header-cont
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    .text-area
+      width: 100%;
+      height: 4rem;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      .title
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        color: #fff;
+        font-weight: normal;
+        font-size: 1.6rem;
+      .description
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        color: rgba(255, 255, 255, .8);
+        font-weight: normal;
+        font-size: 0.8rem;
+        line-height: 2em;
+    .post-meta
+      width: 100%;
+      text-align: center;
+      margin: 0;
+      color: rgba(255, 255, 255, .8);
+      font-weight: normal;
+      font-size: 0.8rem;
+      line-height: 2em;
+
+      .post-time
+        color: rgba(255, 255, 255, .8);
+
+      .post-category
+        a
+          display: inline-block;
+          color: rgba(255, 255, 255, .8);
+          margin: .5rem 1rem;
+          padding: 0px 6px;
+          border: 1px solid rgba(255, 255, 255, .8);
+        a:hover
+          color: rgba(255, 255, 255, 1);
+          border: 1px solid rgba(255, 255, 255, 1);
+
+      .post-comments-count
+        a
+          color: rgba(255, 255, 255, .8);
+
+    .navigation
+      width: 100%
+      text-align: right;
+      padding: 2rem 2rem 0 0;
+      .nav-link
+        display: inline-block;
+        color: rgba(255, 255, 255, .8);
+        font-size: 1rem;
+        margin-right: 1.6em;
+        line-height: 3em;
+        transition: all .3s;
+      .nav-link:hover
+        color: rgba(255, 255, 255, 1);
+        transform: scale(1.2);

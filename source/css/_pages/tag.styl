@@ -1,0 +1,77 @@
+@require "../_vendor/variables"
+
+.tags-all-page
+  width: 800px;
+  max-width: 100%;
+  margin: 0 auto;
+  .tags-cloud
+    width: 100%;
+    list-style: none;
+    text-align: center;
+    padding: 2rem 0 3rem 0;
+    li
+      display: inline-block;
+      margin: .4rem .8rem;
+      a
+        display: block;
+        padding: 4px 13px;
+        background: #4078C0;
+        color: #fff;
+        border-radius: 20px;
+        font-size: 1rem;
+        filter: opacity(.5);
+        -webkit-filter: opacity(.5);
+        transition: all .2s;
+      a:hover
+        transform: translateY(-0.2rem);
+      a[data-num^='1']
+        filter: opacity(.6);
+        -webkit-filter: opacity(.6);
+      a[data-num^='2']
+        filter: opacity(.65);
+        -webkit-filter: opacity(.65);
+      a[data-num^='3']
+        filter: opacity(.7);
+        -webkit-filter: opacity(.7);
+      a[data-num^='4']
+        filter: opacity(.75);
+        -webkit-filter: opacity(.75);
+      a[data-num^='5']
+        filter: opacity(.8);
+        -webkit-filter: opacity(.8);
+      a[data-num^='6']
+        filter: opacity(.85);
+        -webkit-filter: opacity(.85);
+      a[data-num^='7']
+        filter: opacity(.9);
+        -webkit-filter: opacity(.9);
+      a[data-num^='8']
+        filter: opacity(.95);
+        -webkit-filter: opacity(.95);
+      a[data-num^='9']
+        filter: opacity(1);
+        -webkit-filter: opacity(1);
+  .tags-list
+    width: 100%;
+    list-style: none;
+    .tag-item
+      padding: 1.2rem .6rem;
+      .tag-name
+        color: color-second;
+        font-weight: normal;
+        font-size: 1.2rem;
+        line-height: 2.2rem;
+        i
+          padding-right: .8rem;
+      .post-list
+        list-style: none;
+        li
+          padding-left: 1.2rem;
+          line-height: 2rem;
+          a
+            display: inline-block;
+            color: #555;
+            transition: all .4s;
+          a:hover
+            color: #000;
+            transform: translateX(1rem);

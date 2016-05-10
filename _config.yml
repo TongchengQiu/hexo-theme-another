@@ -1,0 +1,65 @@
+# when running hexo in a subdirectory (e.g. domain.tld/blog), remove leading slashes ( "/archives" -> "archives" )
+menu:
+  home: /
+  categories: /categories
+  tags: /tags
+  about: /about
+
+
+# Place your favicon.ico to /source directory.
+favicon: /favicon.ico
+
+# Set default keywords (Use a comma to separate)
+keywords: "^_^"
+
+# Set rss to false to disable feed link.
+# Leave rss as empty to use site's feed link.
+# Set rss to specific value if you have burned your feed already.
+rss:
+
+# Icon fonts
+# Place your font into next/source/fonts, specify directory-name and font-name here
+# Avialable: default | linecons | fifty-shades | feather
+icon_font: default
+#icon_font: fifty-shades
+#icon_font: feather
+#icon_font: linecons
+
+# Code Highlight theme
+# Available value: normal | night | night eighties | night blue | night bright
+# https://github.com/chriskempson/tomorrow-theme
+highlight_theme: normal
+
+# Automatically add list number to toc.
+toc_list_number: true
+
+# Automatically Excerpt
+auto_excerpt:
+  enable: true
+  length: 200
+
+# Use Lato font
+# Note: this option is avialable only when the language is not `zh-Hans`
+use_font_lato: true
+
+# Static files
+vendors: vendors
+css: css
+js: js
+images: images
+
+# Theme version
+version: 0.0.1
+
+google_site_verification:
+baidu_site_verification: fRBucd9VmI
+baidu_gxt_verify_token: ca8f032797b876ef3be37c3d492168a0
+
+# Make duoshuo show UA
+# user_id must NOT be null when admin_enable is true!
+# you can visit http://dev.duoshuo.com get duoshuo user id.
+duoshuo_info:
+  ua_enable: true
+  admin_enable: false
+  user_id: qiutongcheng
+  admin_nickname: qiutc

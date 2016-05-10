@@ -1,0 +1,140 @@
+@require "../_vendor/variables"
+
+.index-content
+  width: 100%;
+  position: relative;
+  padding-right: 230px;
+  .right-info
+    position: absolute;
+    width: 220px;
+    height: auto;
+    right: 0;
+    top: 0;
+    padding: 0 10px 10px 20px;
+    h5
+      margin: 0;
+      font-size: 15px;
+      color: #666;
+      padding-top: 20px;
+      padding-bottom: 10px;
+      border-top: 1px solid #999;
+      padding-left: 5px;
+    .tags
+      margin-bottom: 24px;
+      a
+        display: inline-block;
+        text-decoration: none;
+        font-size: 13px;
+        padding: 3px 6px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        margin: 0px 1px 10px 0;
+        color: #ccc;
+        cursor: pointer;
+      a:hover
+        transition: all .5s;
+        border: 1px solid color-main;
+        color: color-main;
+    .about-me
+      img
+        width: 90%;
+        height: auto;
+      .description
+        color: #333;
+        padding-top: 10px;
+      .links-of-author
+        width: 100%;
+        text-align: left;
+        padding-top: 1rem;
+        .links-of-author-item
+          width: 36px;
+          height: 36px;
+          line-height: 36px;
+          display: inline-block;
+          border-radius: 18px;
+          overflow: hidden;
+          a:hover
+            background: color-second;
+          a
+            display: block;
+            transition: all .3s;
+            width: 100%;
+            text-align: center;
+            height: 100%;
+            background: #bababa;
+            position: relative;
+            .fa-zhihu:before
+              content: '知'
+
+
+
+  .posts-list
+    width: 100%;
+
+  .post-item:hover
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.24),0 3px 1px -2px rgba(0,0,0,.3),0 1px 5px 0 rgba(0,0,0,.22);
+  .post-item
+    max-width: 100%;
+    width: 100%;
+    margin: 20px auto;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+    padding: 1rem;
+
+    .title-wrap
+      height: 200px;
+      background: pink center / cover;
+      position: relative;
+      .title
+        color: rgba(255, 255, 255, 0.95);;
+        position: absolute;
+        bottom: 1rem;
+        left: 1rem;
+        font-weight: normal;
+        font-size: 1.3rem;
+    .post-cont
+      padding: 1rem 0;
+      .post-time
+        display: block;
+        font-size: 12px;
+        color: rgba(0,0,0,.4);
+        overflow: hidden;
+        margin: 0 0 8px 0;
+      .text
+        color: rgba(0,0,0,.54);
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+        overflow: hidden;
+        width: 100%;
+
+    .bottom-bar
+      border-top: 1px solid rgba(0,0,0,.1);
+      font-size: 0.9rem;
+      line-height: normal;
+      width: 100%;
+      background-color: transparent;
+      padding: .6rem;
+      padding-bottom: 0;
+
+      .post-category
+        font-size: 0.8rem;
+        a
+          color: color-vice;
+          margin-left: 1rem;
+          display: inline-block;
+          padding: 3px 6px;
+        a:hover
+          background-color: rgba(0, 0, 0, .1);
+
+      .read-more-btn
+        float: right;
+        color: color-main;
+        display: block;
+        padding: 8px 14px;
+        position: relative;
+        top: -4px;
+        background-color: rgba(158,158,158,.1);
+      .read-more-btn:hover
+        background-color: rgba(158,158,158,.2);
+
+    .index-categorie
+      font-size: 13px;

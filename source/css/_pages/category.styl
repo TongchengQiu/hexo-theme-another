@@ -1,0 +1,40 @@
+@require "../_vendor/variables"
+
+.category-all-page
+  width: 800px;
+  max-width: 100%;
+  margin: 0 auto;
+  .category-all-title
+    text-align: center;
+    width: 100%;
+    line-height: 4rem;
+    font-size: .9rem;
+  .category-list
+    width: 100%;
+    list-style: none;
+    .category-name
+      font-weight: normal;
+      color: color-second;
+      font-size: 1.2rem;
+      line-height: 3rem;
+      i
+        padding-right: .5rem;
+    .category-item
+      padding: 1rem;
+      .post-list
+        list-style: none;
+        transition: all .3s;
+        li:hover
+          border-bottom: 1px solid color-main;
+        li
+          line-height: 3rem;
+          font-size: 1.1rem;
+          color: #333;
+          padding-left: 1.3rem;
+          border-bottom: 1px solid #ddd;
+          padding-bottom: .5rem;
+          transition: all .3s;
+          a
+            color: #333;
+          a:hover
+            color: color-main;
