@@ -45,7 +45,32 @@ body {
   background: $color-gray;
 }
 ::-webkit-scrollbar {
-  width: 0px;
+  width: 4px;
   height: 0px;
   background-color: none;
+}
+::-webkit-scrollbar-thumb {
+  width: 4px;
+  height: 10px;
+  background: #3f86b5;
+}
+
+.back-top-btn {
+  display: none;
+  position: fixed;
+  width:2.6rem;
+  height:2.6rem;
+  line-height:2.6rem;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #fff;
+  right:2.6rem;
+  bottom: 5rem;
+  background: rgba(63, 134, 181, 0.78);
+  cursor: pointer;
+  border-radius: 20px;
+  transition: all .2s;
+}
+.back-top-btn:hover {
+  background: #3f86b5;
 }

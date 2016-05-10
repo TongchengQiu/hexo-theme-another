@@ -85,12 +85,16 @@
       background: pink center / cover;
       position: relative;
       .title
-        color: rgba(255, 255, 255, 0.95);;
+        color: rgba(255, 255, 255, 0.95);
         position: absolute;
         bottom: 1rem;
         left: 1rem;
         font-weight: normal;
         font-size: 1.3rem;
+        a
+          color: rgba(255, 255, 255, 0.95);
+        a:hover
+          color: rgba(255, 255, 255, 1);
     .post-cont
       padding: 1rem 0;
       .post-time
@@ -138,3 +142,12 @@
 
     .index-categorie
       font-size: 13px;
+
+  .post-item.without-bgimage
+    .title-wrap
+      height: 80px;
+      .title
+        a
+          color: #333;
+        a:hover
+          color: #000;

@@ -9,7 +9,7 @@
   </div>
   <div class="about-me">
     <h5>ABOUT ME</h5>
-    <img src="{{ config.avatar or url_for(config.images) + '/default_avatar.jpg' }}" alt="{{ theme.author }}" itemprop="image" />
+    <img src="{{ theme.avatar or url_for(theme.images) + '/default_avatar.jpg' }}" alt="{{ theme.author }}" itemprop="image" />
     <p class="description motion-element" itemprop="description">{{ theme.description }}</p>
 
     <div class="links-of-author clearfix">

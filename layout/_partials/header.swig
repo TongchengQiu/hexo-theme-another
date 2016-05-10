@@ -1,7 +1,7 @@
 {% if page.bgimage %}
-<header class="header" style="background: url({{ page.bgimage }}) center / cover">
+<header class="header" id="header" style="background: url({{ page.bgimage }}) center / cover">
 {% else %}
-<header class="header">
+<header class="header" id="header">
 {% endif %}
   <div class="header-cont">
     <div class="text-area">
@@ -53,7 +53,7 @@
     </div>
     <!-- Navigation -->
     {% if theme.menu %}
-    <nav class="navigation clearfix">
+    <nav class="navigation clearfix" id="navigation">
       {% for name, path in theme.menu %}
         {% set itemName = name.toLowerCase() %}
         <a class="nav-link" href="{{ url_for(path) }}" rel="section">

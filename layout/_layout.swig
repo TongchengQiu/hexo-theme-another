@@ -21,10 +21,12 @@
 
 
     </main>
-    
+
     {% include '_partials/footer.swig' %}
 
   </div>
+
+  <div class="back-top-btn" id="back-top-btn"><i class="fa fa-chevron-up"></i></div>
 
 {% include '_partials/foot.swig' %}
 

@@ -1,9 +1,13 @@
 {% macro render(post, is_index, post_extra_class) %}
 
+{% if post.bgimage %}
 <div class="post-item">
+{% else %}
+<div class="post-item without-bgimage">
+{% endif %}
 
   <div class="title-wrap" style="background: url({{ post.bgimage }}) center / cover">
-    <h2 class="title">{{ post.title }}</h2>
+    <h2 class="title"><a href="{{ url_for(post.path) }}">{{ post.title }}</a></h2>
   </div>
 
   <div class="post-cont">
