@@ -9,6 +9,9 @@ menu:
 # Place your favicon.ico to /source directory.
 favicon: /favicon.ico
 
+# avatar
+avatar: /img/qtc_avatar.jpg
+
 # Set default keywords (Use a comma to separate)
 keywords: "^_^"
 
@@ -17,21 +20,11 @@ keywords: "^_^"
 # Set rss to specific value if you have burned your feed already.
 rss:
 
-# Icon fonts
-# Place your font into next/source/fonts, specify directory-name and font-name here
-# Avialable: default | linecons | fifty-shades | feather
-icon_font: default
-#icon_font: fifty-shades
-#icon_font: feather
-#icon_font: linecons
 
 # Code Highlight theme
 # Available value: normal | night | night eighties | night blue | night bright
 # https://github.com/chriskempson/tomorrow-theme
 highlight_theme: normal
-
-# Automatically add list number to toc.
-toc_list_number: true
 
 # Automatically Excerpt
 auto_excerpt:
@@ -51,7 +44,7 @@ images: images
 # Theme version
 version: 0.0.1
 
-google_site_verification:
+google_site_verification: asdadseqwerqgwehuyg
 baidu_site_verification: fRBucd9VmI
 baidu_gxt_verify_token: ca8f032797b876ef3be37c3d492168a0
 

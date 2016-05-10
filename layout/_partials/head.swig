@@ -67,9 +67,9 @@
 {% endif %}
 
 {# font #}
-{# {% if config.language !== 'zh-Hans' and theme.use_font_lato %}
+{% if config.language !== 'zh-Hans' and theme.use_font_lato %}
 <link href='//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-{% endif %} #}
+{% endif %}
 
 {# css #}
 <link href="http://cdn.bootcss.com/font-awesome/4.6.2/css/font-awesome.min.css" rel="stylesheet">
