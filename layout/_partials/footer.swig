@@ -9,15 +9,17 @@
 
   <div class="info">
     <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-    <span id="showDays" class="show-days"></span>
-    <script>
-    var birthDay = new Date("10/03/2015");
-    var now = new Date();
-    var duration = now.getTime() - birthDay.getTime();
-    var total= Math.floor(duration / (1000 * 60 * 60 * 24));
-    document.getElementById("showDays").innerHTML = "本站已运行 "+total+" 天";
-    </script>
-    ---
+    {% if theme.birth_day %}
+      <span id="showDays" class="show-days"></span>
+      <script>
+      var birthDay = new Date({{ theme.birth_day }});
+      var now = new Date();
+      var duration = now.getTime() - birthDay.getTime();
+      var total= Math.floor(duration / (1000 * 60 * 60 * 24));
+      document.getElementById("showDays").innerHTML = "本站已运行 "+total+" 天";
+      </script>
+      ---
+    {% endif %}
     <span id="busuanzi_container_site_pv">
         总访问量<span id="busuanzi_value_site_pv"></span>次
     </span>

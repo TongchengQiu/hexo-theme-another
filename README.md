@@ -24,6 +24,9 @@ avatar: /img/qtc_avatar.jpg
 # 设置默认的 keywords
 keywords: "^_^"
 
+# 设置博客的成立时间
+birth_day: 10/03/2015
+
 # 设置 rss 链接，不需要可不填写
 rss:
 
