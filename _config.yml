@@ -49,6 +49,8 @@ google_site_verification: asdadseqwerqgwehuyg
 baidu_site_verification: fRBucd9VmI
 baidu_gxt_verify_token: ca8f032797b876ef3be37c3d492168a0
 
+baidu_analytics: 47d302b006bf28a09c22990da53cd3da
+
 # Make duoshuo show UA
 # user_id must NOT be null when admin_enable is true!
 # you can visit http://dev.duoshuo.com get duoshuo user id.

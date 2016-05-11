@@ -58,6 +58,11 @@ google_site_verification:1
 baidu_site_verification: 1
 baidu_gxt_verify_token: 1
 
+# 百度统计的代码验证
+baidu_analytics: ***
+# google统计的代码验证
+google_analytics: ***
+
 # 多说服务配置
 duoshuo_info:
   ua_enable: true
