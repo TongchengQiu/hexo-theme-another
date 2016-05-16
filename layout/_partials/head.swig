@@ -1,14 +1,12 @@
 <!-- content-Type -->
 <meta charset="utf-8">
-<!-- 优先使用 IE 最新版本和 Chrome -->
+
+{# 优先使用 IE 最新版本和 Chrome #}
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="renderer" content="webkit|ie-comp|ie-stand">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 <meta name="language" content="en">
 <meta name="robots" content="all">
-<meta name="author" content="TongchengQiu, TongchengQiu@gmail.com">
-<meta name="reply-to" content="TongchengQiu@gmail.com">
-<meta name="owner" content="TongchengQiu">
 
 {# mobile phone #}
 <meta content="yes" name="apple-mobile-web-app-capable">
@@ -20,11 +18,18 @@
 <meta http-equiv="Cache-Control" content="no-transform" />
 <meta http-equiv="Cache-Control" content="no-siteapp" />
 
+{# 作者信息 #}
+{% if theme.author && theme.email %}
+<meta name="author" content="theme.author, theme.email">
+<meta name="reply-to" content="theme.email">
+<meta name="owner" content="theme.author">
+{% endif %}
+
 {# 谷歌分析验证 #}
 {% if theme.google_site_verification %}
 <meta name="google-site-verification" content="{{ theme.google_site_verification }}" />
-{% endif
-%}
+{% endif %}
+
 {# 百度分析验证 #}
 {% if theme.baidu_site_verification %}
 <meta name="baidu-site-verification" content="{{ theme.baidu_site_verification }}" />
@@ -42,11 +47,11 @@
 
 {# keywords #}
 {% if page.keywords %}
-  <meta name="keywords" content="{{ page.keywords }}" />
+<meta name="keywords" content="{{ page.keywords }}" />
 {% elif page.tags and page.tags.length %}
-  <meta name="keywords" content="{% for tag in page.tags %}{{ tag.name }},{% endfor %}" />
+<meta name="keywords" content="{% for tag in page.tags %}{{ tag.name }},{% endfor %}" />
 {% elif theme.keywords %}
-  <meta name="keywords" content="{{ theme.keywords }}" />
+<meta name="keywords" content="{{ theme.keywords }}" />
 {% endif %}
 
 {{ open_graph({
@@ -54,7 +59,6 @@
   google_plus: theme.google_plus,
   fb_admins: theme.fb_admins,
   fb_app_id: theme.fb_app_id}) }}
-
 
 {# rss #}
 {% if theme.rss %}

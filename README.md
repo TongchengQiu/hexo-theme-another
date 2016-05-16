@@ -8,68 +8,79 @@
 
 主要在于配置主题目录下的 ``_congig.yml`` 文件。
 ```
-# 配置菜单导航栏
+# 导航菜单
 menu:
   home: /
   categories: /categories
   tags: /tags
   about: /about
 
-# 配置网站的 favicon 图标，放在根目录的``/source``下。
+# 博客作者和email
+author: TongchengQiu
+email: TongchengQiu@gmail.com
+
+# 网站图标－在 /source 文件夹下
 favicon: /favicon.ico
 
-# 配置个人头像或者照片
+# 个人头像图片 /source 文件夹下
 avatar: /img/qtc_avatar.jpg
 
-# 设置默认的 keywords
+# 默认的 key words
 keywords: "^_^"
 
-# 设置博客的成立时间
-birth_day: 10/03/2015
-
-# 设置 rss 链接，不需要可不填写
+# rss
 rss:
 
+# 网站成立日期
+birth_day: 10/04/2015
 
-# markdown生成的代码的高亮样式：
-# normal | night | night eighties | night blue | night bright
+# 成立的年
+since: 2015
+
+# Available value: normal | night | night eighties | night blue | night bright
 # https://github.com/chriskempson/tomorrow-theme
+# markdown 生成的代码高亮主题色
 highlight_theme: normal
 
-# 首页列表文章的预览截取字符长度
+# 首页的文章预览裁剪字数
 auto_excerpt:
   enable: true
   length: 200
 
-# 字体，当非中文的时候
-use_font_lato: true
+# 各种网站验证的验证码
+google_site_verification: 111
+baidu_site_verification: 111
+baidu_gxt_verify_token: 111
 
-# 静态文件目录（不需要修改）
-vendors: vendors
-css: css
-js: js
-images: images
+# 百度分析验证码
+baidu_analytics: 111
 
-# 版本（不需要修改）
-version: 0.0.1
-
-# google 百度 的网站分析验证
-google_site_verification:1
-baidu_site_verification: 1
-baidu_gxt_verify_token: 1
-
-# 百度统计的代码验证
-baidu_analytics: ***
-# google统计的代码验证
-google_analytics: ***
-
-# 多说服务配置
+# 多说的服务信息
 duoshuo_info:
   ua_enable: true
   admin_enable: false
   user_id: qiutongcheng
   admin_nickname: qiutc
+duoshuo_shortname: qiutongcheng
 
+# 社会化链接
+social:
+  github: https://github.com/tongchengqiu
+  twitter: https://twitter.com/tongchengqiu
+  zhihu: http://www.zhihu.com/people/tongchengqiu
+  weibo: http://weibo.com/tongchengqiu
+
+# 在不是中文情况下是否适用字体
+use_font_lato: true
+
+# 静态文件路径
+vendors: vendors
+css: css
+js: js
+images: images
+
+# 主题版本
+version: 0.0.1
 ```
 
 网站根目录的配置，``_config.yml``，可以直接参考我的博客的配置：
@@ -81,22 +92,21 @@ duoshuo_info:
 ## Docs: http://hexo.io/docs/configuration.html
 ## Source: https://github.com/hexojs/hexo/
 
-# 网站的一些信息
-title: 阿城的blog                 # 标题
-subtitle: 抓啊抓啊~~~				 # 副标题
-description: hello word! 😺		 # 描述
-author: 阿城😇					 # 作者
-language: zh-Hans				 # 语言
-timezone: Asia/Shanghai          # 时区
+# 网站基本信息
+title: title
+subtitle: subtitle
+description: description
+author: author
+language: zh-Hans
+timezone: Asia/Shanghai
 
-# 网站 URL 配置，一般只要修改成你的 ``url`` 就可以了
-url: http://qiutc.me
+# URL 格式
+url: http://yoursite.
 root: /
 permalink: post/:title.html
 permalink_defaults:
-favicon: /favicon.ico
 
-# 目录设置，一般不用管
+# Directory 文件目录，一般不管
 source_dir: source
 public_dir: public
 tag_dir: tags
@@ -106,7 +116,7 @@ code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
 
-# 写作配置
+# Writing 写作格式
 new_post_name: :title.md # File name of new posts
 default_layout: post
 titlecase: false # Transform title into titlecase
@@ -121,53 +131,45 @@ highlight:
   line_number: false
   auto_detect: true
   tab_replace:
+
 # Category & Tag
 default_category: uncategorized
 category_map:
 tag_map:
 
-# 日期和时间格式
+# Date / Time format 事件格式
+## http://momentjs.com/docs/#/displaying/format/
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
 
-# 每页页码
+# Pagination 分页数
+## Set per_page to 0 to disable pagination
 per_page: 5
 pagination_dir: page
-index_generator:
-  per_page: 5
 
+# Extensions 主题
+## Plugins: http://hexo.io/plugins/
+## Themes: http://hexo.io/themes/
+theme: another
 
-# 设置主题，设置成主题的目录名称就可以，
-theme: hexo-theme-another
-since: 2015
-
-# 发布上传的 github 地址，这里改成你自己的
+# Deployment github 的地址
+## Docs: http://hexo.io/docs/deployment.html
 deploy:
   type: git
   repository:
-    github: git@github.com:TongchengQiu/blog.git
+    github: git@yourgithub
+  branch: gh-pages
 
-# 多说评论的信息，这里设置成泥自己的
-duoshuo_shortname: qiutongcheng
-duoshuo_hotartical: false
-
-# hexo 插件，不需要配置
+# 插件
 plugins:
 - hexo-generator-sitemap
-- hexo-generator-index
 - hexo-generator-archive
 - hexo-generator-tag
+
 # Creative Commons 4.0 International License.
 # http://creativecommons.org/
 # Available: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero
 creative_commons: by-nc-sa
-
-# 社会化链接
-social:
-  github: https://github.com/tongchengqiu
-  twitter: https://twitter.com/tongchengqiu
-  zhihu: http://www.zhihu.com/people/tongchengqiu
-  weibo: http://weibo.com/tongchengqiu
 
 ```
 

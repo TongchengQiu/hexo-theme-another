@@ -1,18 +1,25 @@
 # when running hexo in a subdirectory (e.g. domain.tld/blog), remove leading slashes ( "/archives" -> "archives" )
+# 导航菜单
 menu:
   home: /
   categories: /categories
   tags: /tags
   about: /about
 
+# 博客作者和email
+author: TongchengQiu
+email: TongchengQiu@gmail.com
 
 # Place your favicon.ico to /source directory.
+# 网站图标－在 /source 文件夹下
 favicon: /favicon.ico
 
 # avatar
+# 个人头像图片 /source 文件夹下
 avatar: /img/qtc_avatar.jpg
 
 # Set default keywords (Use a comma to separate)
+# 默认的 key words
 keywords: "^_^"
 
 # Set rss to false to disable feed link.
@@ -20,42 +27,63 @@ keywords: "^_^"
 # Set rss to specific value if you have burned your feed already.
 rss:
 
-birth_day: 10/03/2015
+# 网站成立日期
+birth_day: 10/04/2015
+
+# 成立的年
+since: 2015
 
 # Code Highlight theme
 # Available value: normal | night | night eighties | night blue | night bright
 # https://github.com/chriskempson/tomorrow-theme
+# markdown 生成的代码高亮主题色
 highlight_theme: normal
 
 # Automatically Excerpt
+# 首页的文章预览裁剪字数
 auto_excerpt:
   enable: true
   length: 200
 
+# 各种网站验证的验证码
+google_site_verification: asdadseqwerqgwehuyg
+baidu_site_verification: fRBucd9VmI
+baidu_gxt_verify_token: ca8f032797b876ef3be37c3d492168a0
+
+# 百度分析验证码
+baidu_analytics: 47d302b006bf28a09c22990da53cd3da
+
+# Make duoshuo show UA
+# user_id must NOT be null when admin_enable is true!
+# you can visit http://dev.duoshuo.com get duoshuo user id.
+# 多说的服务信息
+duoshuo_info:
+  ua_enable: true
+  admin_enable: false
+  user_id: qiutongcheng
+  admin_nickname: qiutc
+duoshuo_shortname: qiutongcheng
+
+# Social links
+# 社会化链接
+social:
+  github: https://github.com/tongchengqiu
+  twitter: https://twitter.com/tongchengqiu
+  zhihu: http://www.zhihu.com/people/tongchengqiu
+  weibo: http://weibo.com/tongchengqiu
+
 # Use Lato font
 # Note: this option is avialable only when the language is not `zh-Hans`
+# 在不是中文情况下是否适用字体
 use_font_lato: true
 
 # Static files
+# 静态文件路径
 vendors: vendors
 css: css
 js: js
 images: images
 
 # Theme version
+# 主题版本
 version: 0.0.1
-
-google_site_verification: asdadseqwerqgwehuyg
-baidu_site_verification: fRBucd9VmI
-baidu_gxt_verify_token: ca8f032797b876ef3be37c3d492168a0
-
-baidu_analytics: 47d302b006bf28a09c22990da53cd3da
-
-# Make duoshuo show UA
-# user_id must NOT be null when admin_enable is true!
-# you can visit http://dev.duoshuo.com get duoshuo user id.
-duoshuo_info:
-  ua_enable: true
-  admin_enable: false
-  user_id: qiutongcheng
-  admin_nickname: qiutc
