@@ -36,6 +36,11 @@ window.onload = function () {
       }
     }
   };
+
+  var $postSidebar = document.querySelector('#post-sidebar');
+  document.querySelector('#toggle-btn').addEventListener('click', function () {
+    fadeToggle($postSidebar);
+  }, false);
 };
 
 
@@ -57,4 +62,22 @@ function getHeight(el) {
   var paddingTop = parseFloat(styles.paddingTop);
   var paddingBottom = parseFloat(styles.paddingBottom);
   return height - borderBottomWidth - borderTopWidth - paddingTop - paddingBottom;
+}
+
+
+function fadeToggle(el) {
+  el.style.transition = 'opacity .4s';
+  // var opacity = el.ownerDocument.defaultView.getComputedStyle(el, null).opacity;
+  var display = el.style.display;
+  if (display === 'block') {
+    el.style.opacity = '0';
+    window.setTimeout(function() {
+      el.style.display = 'none';
+    }, 400);
+  } else {
+    el.style.display = 'block';
+    window.setTimeout(function() {
+      el.style.opacity = '1';
+    }, 10);
+  }
 }

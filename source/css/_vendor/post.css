@@ -166,31 +166,37 @@
 
 .markdown-body h1:before {
   content: "#";
+  font-size: .8em;
   display: inline;
 }
 
 .markdown-body h2:before {
-  content: "##";
+  content: "#";
+  font-size: .8em;
   display: inline;
 }
 
 .markdown-body h3:before {
-  content: "###";
+  content: "#";
+  font-size: .8em;
   display: inline;
 }
 
 .markdown-body h4:before {
-  content: "####";
+  content: "#";
+  font-size: .8em;
   display: inline;
 }
 
 .markdown-body h5:before {
-  content: "#####";
+  content: "#";
+  font-size: .8em;
   display: inline;
 }
 
 .markdown-body h6:before {
-  content: "######";
+  content: "#";
+  font-size: .8em;
   display: inline;
 }
 

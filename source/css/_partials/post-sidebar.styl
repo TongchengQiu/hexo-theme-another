@@ -1,0 +1,61 @@
+@require "../_vendor/variables"
+
+.post-sidebar
+  position: fixed;
+  right: 2.6rem;
+  bottom: 6rem;
+  .toggle-btn
+    width: 2.6rem;
+    height: 2.6rem;
+    line-height: 2.6rem;
+    color: #fff;
+    background: rgba(63, 134, 181, 0.78);
+    cursor: pointer;
+    border-radius: 20px;
+    transition: all .2s;
+    text-align: center;
+    &:hover
+      background: #3f86b5;
+.post-toc-wrap
+  display: none;
+  position: absolute;
+  right: 3rem;
+  bottom: -2rem;
+  width: 250px;
+  height: auto;
+  background: #fff;
+  text-align: left;
+  padding: 1rem;
+  border-radius: 3px;
+  box-shadow: 0 0 1rem #ccc;
+  z-index: 999;
+  .toc-title
+    font-size: 1.3rem;
+    font-weight: normal;
+    color: #555;
+    line-height: 1em;
+    padding-bottom: .5rem;
+    margin-bottom: .2rem;
+    border-bottom: 1px solid #eee;
+  .post-toc
+    .post-toc-content
+      ol
+        list-style: none;
+        width: 100%;
+        li
+          width: 100%;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          display: none;
+          font-size: .9rem;
+          line-height: 1.4em;
+        .nav-level-1, .nav-level-2
+          display: block;
+      a
+        color: color-second;
+      .nav-child
+        padding-left: 1rem;
+.post-toc-wrap.fixed
+  position: fixed;
+  top: 60px;

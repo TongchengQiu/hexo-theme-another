@@ -10,6 +10,8 @@
 
       <div class="content markdown-body">{{ page.content }}</div>
 
+      {% include '_partials/post-sidebar.swig' %}
+
     </div>
 
     <footer class="post-footer">
