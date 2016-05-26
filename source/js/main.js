@@ -38,9 +38,11 @@ window.onload = function () {
   };
 
   var $postSidebar = document.querySelector('#post-sidebar');
-  document.querySelector('#toggle-btn').addEventListener('click', function () {
-    fadeToggle($postSidebar);
-  }, false);
+  if(document.querySelector('#toggle-btn')) {
+    document.querySelector('#toggle-btn').addEventListener('click', function () {
+      fadeToggle($postSidebar);
+    }, false);
+  }
 };
 
 

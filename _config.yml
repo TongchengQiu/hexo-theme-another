@@ -46,12 +46,14 @@ auto_excerpt:
   length: 200
 
 # 各种网站验证的验证码
-google_site_verification: asdadseqwerqgwehuyg
+google_site_verification: UA-78049587-1
 baidu_site_verification: fRBucd9VmI
 baidu_gxt_verify_token: ca8f032797b876ef3be37c3d492168a0
 
 # 百度分析验证码
 baidu_analytics: 47d302b006bf28a09c22990da53cd3da
+# google 分析
+google_analytics: UA-78049587-1
 
 # Make duoshuo show UA
 # user_id must NOT be null when admin_enable is true!

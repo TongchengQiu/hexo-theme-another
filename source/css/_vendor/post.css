@@ -141,61 +141,91 @@
 }
 
 .markdown-body h1 {
+  position: relative;
+  padding-right: 1.1rem;
   font-size: 1.9rem;
 }
 
 .markdown-body h2 {
+  position: relative;
+  padding-right: 1.1rem;
   font-size: 1.66rem;
 }
 
 .markdown-body h3 {
+  position: relative;
+  padding-right: 1.1rem;
   font-size: 1.4rem;
 }
 
 .markdown-body h4 {
+  position: relative;
+  padding-right: 1.1rem;
   font-size: 1.2rem;
 }
 
 .markdown-body h5 {
+  position: relative;
+  padding-right: 1.1rem;
   font-size: 1rem;
 }
 
 .markdown-body h6 {
+  position: relative;
+  padding-right: 1.1rem;
   font-size: 0.8rem;
 }
 
-.markdown-body h1:before {
+.markdown-body h1:after {
   content: "#";
+  position: absolute;
+  top: 0;
+  right: .2rem;
   font-size: .8em;
   display: inline;
 }
 
-.markdown-body h2:before {
+.markdown-body h2:after {
   content: "#";
+  position: absolute;
+  top: 0;
+  right: .2rem;
   font-size: .8em;
   display: inline;
 }
 
-.markdown-body h3:before {
+.markdown-body h3:after {
   content: "#";
+  position: absolute;
+  top: 0;
+  right: .2rem;
   font-size: .8em;
   display: inline;
 }
 
-.markdown-body h4:before {
+.markdown-body h4:after {
   content: "#";
+  position: absolute;
+  top: 0;
+  right: .2rem;
   font-size: .8em;
   display: inline;
 }
 
-.markdown-body h5:before {
+.markdown-body h5:after {
   content: "#";
+  position: absolute;
+  top: 0;
+  right: .2rem;
   font-size: .8em;
   display: inline;
 }
 
-.markdown-body h6:before {
+.markdown-body h6:after {
   content: "#";
+  position: absolute;
+  top: 0;
+  right: .2rem;
   font-size: .8em;
   display: inline;
 }
