@@ -22,6 +22,7 @@
           {% endfor %}
         </div>
       {% endif %}
+      {% include '_partials/donation.swig' %}
     </footer>
 
   </article>

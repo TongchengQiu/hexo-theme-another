@@ -18,9 +18,11 @@
       </time>
     </span>
     <div class="text">
-      {% set content = post.content | striptags %}
-      {{ content.substring(0, theme.auto_excerpt.length) }}
-      {% if content.length > theme.auto_excerpt.length %}...{% endif %}
+      <a href="{{ url_for(post.path) }}">
+        {% set content = post.content | striptags %}
+        {{ content.substring(0, theme.auto_excerpt.length) }}
+        {% if content.length > theme.auto_excerpt.length %}...{% endif %}
+      </a>
     </div>
   </div>
 

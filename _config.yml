@@ -10,6 +10,9 @@ menu:
 author: TongchengQiu
 email: TongchengQiu@gmail.com
 
+# 捐赠
+donation: /img/
+
 # Place your favicon.ico to /source directory.
 # 网站图标－在 /source 文件夹下
 favicon: /favicon.ico

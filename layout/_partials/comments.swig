@@ -7,4 +7,3 @@
     {% endif %}
   </div>
 {% endif %}
-</style>
