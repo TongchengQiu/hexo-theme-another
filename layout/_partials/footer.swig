@@ -12,7 +12,7 @@
     {% if theme.birth_day %}
       <span id="showDays" class="show-days"></span>
       <script>
-      var birthDay = new Date({{ theme.birth_day }});
+      var birthDay = new Date('{{ theme.birth_day }}');
       var now = new Date();
       var duration = now.getTime() - birthDay.getTime();
       var total= Math.floor(duration / (1000 * 60 * 60 * 24));
