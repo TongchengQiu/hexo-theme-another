@@ -6,7 +6,7 @@
   <div class="header-cont">
     <div class="text-area">
       {% if page.title %}
-        <h1 class="title"> {{ page.title }} </h1>
+        <h1 class="title" data-text="{{ page.title }}"> {{ page.title }} </h1>
 
         {% if page.type != "categories" && page.type != "tags" %}
         <div class="post-meta">
@@ -47,8 +47,8 @@
         </div>
         {% endif %}
       {% else %}
-        <h1 class="title"> {{ config.title }} </h1>
-        <h3 class="description">{{ theme.description }}</h3>
+        <h1 class="title" data-text="{{ config.title }}">{{ config.title }}</h1>
+        <h3 class="description" data-text="{{ theme.description }}">{{ theme.description }}</h3>
       {% endif %}
     </div>
     <!-- Navigation -->

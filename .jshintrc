@@ -15,6 +15,7 @@
   "globals": {
     "$": true,
     "window": true,
-    "document": true
+    "document": true,
+    "Motto": true
   }
 }

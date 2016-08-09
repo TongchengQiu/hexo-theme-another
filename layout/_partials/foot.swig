@@ -3,4 +3,5 @@
 {% include '../_scripts/comments/duoshuo.swig' %}
 {% endif %}
 
+<script type="text/javascript" src="{{ url_for(theme.js) }}/motto.min.js?v={{ theme.version }}"></script>
 <script type="text/javascript" src="{{ url_for(theme.js) }}/main.js?v={{ theme.version }}"></script>

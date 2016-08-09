@@ -79,11 +79,26 @@
     margin: 20px auto;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
     padding: 1rem;
-
+    &.without-bgimage
+      .title-wrap
+        &:before
+          content: '';
+          display: none;
     .title-wrap
       height: 200px;
       background: pink center / cover;
       position: relative;
+      &:before
+        content: ' ';
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        background: rgba(0,0,0,.30);
+      &:hover:before
+        background: rgba(0,0,0,.10);
       .title
         color: rgba(255, 255, 255, 0.95);
         position: absolute;

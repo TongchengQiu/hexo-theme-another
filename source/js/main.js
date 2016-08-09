@@ -43,6 +43,13 @@ window.onload = function () {
       fadeToggle($postSidebar);
     }, false);
   }
+  // //
+  // new Motto('.header .description', {
+  //   lyric: document.querySelector('.header .description'). attributes['data-text'].value,
+  //   showUpSpeed: 120,
+  //   flashSpeed: 100,
+  //   flashTimeout: 1000
+  // });
 };
 
 
