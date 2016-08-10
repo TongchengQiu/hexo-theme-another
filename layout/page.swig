@@ -10,6 +10,8 @@
     {% include 'category.swig' %}
   {% elif page.type === "tags" %}
     {% include 'tag.swig' %}
+  {% elif page.type === "about" %}
+    {% include '_partials/post-content.swig' %}
   {% else %}
     {% include '404.swig' %}
   {% endif %}

@@ -8,7 +8,7 @@
       {% if page.title %}
         <h1 class="title" data-text="{{ page.title }}"> {{ page.title }} </h1>
 
-        {% if page.type != "categories" && page.type != "tags" %}
+        {% if page.type != "categories" && page.type != "tags" && page.type != "about" %}
         <div class="post-meta">
           <div class="post-time">
             {{ __('post.posted') }}
