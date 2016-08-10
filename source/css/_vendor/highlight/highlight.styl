@@ -29,6 +29,35 @@ $line-numbers
       padding: 0
   .highlight
     @extend $code-block
+    position: relative
+    padding-top: 53px
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    &:before
+      display: block
+      content: ' '
+      height: 38px
+      position: absolute;
+      top: 0
+      left: 0
+      right: 0
+      background-color: #e3e3e3;
+      padding: 0 12px;
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+    &:after
+      content: " ";
+      position: absolute;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      background: #fc625d;
+      width: 12px;
+      height: 12px;
+      top: 0;
+      left: 20px;
+      margin-top: 13px;
+      -webkit-box-shadow: 20px 0 #fdbc40,40px 0 #35cd4b;
+      box-shadow: 20px 0 #fdbc40,40px 0 #35cd4b;
     pre
       border: none
       margin: 0
