@@ -1,6 +1,6 @@
 html{font-size:16px}
-@media screen and (min-width:300px) and (max-width:375px){html{font-size:12px}}
-@media screen and (min-width:376px) and (max-width:414px){html{font-size:13px}}
+@media screen and (min-width:300px) and (max-width:375px){html{font-size:14px}}
+@media screen and (min-width:376px) and (max-width:414px){html{font-size:14px}}
 @media screen and (min-width:415px) and (max-width:639px){html{font-size:14px}}
 @media screen and (min-width:640px) and (max-width:719px){html{font-size:15px}}
 @media screen and (min-width:720px) and (max-width:749px){html{font-size:16px}}
