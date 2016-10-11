@@ -38,7 +38,7 @@
     </label>
     <input type="checkbox" name="donation" id="donation">
     <div class="img-box">
-      <img src="/img/donation.png" alt="donation" />
+      <img src="{{theme.donation}}" alt="donation" />
     </div>
     </style>
   </div>
