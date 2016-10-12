@@ -15,10 +15,8 @@
       margin: 0;
       font-size: 15px;
       color: #666;
-      padding-top: 20px;
-      padding-bottom: 10px;
       border-top: 1px solid #999;
-      padding-left: 5px;
+      padding: 20px 5px 10px 5px;
     .tags
       margin-bottom: 24px;
       a
@@ -35,6 +33,21 @@
         transition: all .5s;
         border: 1px solid color-main;
         color: color-main;
+    .friend-links
+      a
+        display: block;
+        width: 100%;
+        padding: 5px;
+        line-height: 1.1em;
+        font-size: .85rem;
+        color: highlight-foreground
+        &:hover
+          text-decoration: underline;
+          color: color-second;
+      .tip
+        color: highlight-selection
+        font-size: .7rem;
+        padding: 5px;
     .about-me
       img
         width: 90%;
@@ -45,7 +58,7 @@
       .links-of-author
         width: 100%;
         text-align: left;
-        padding-top: 1rem;
+        padding: 1rem 0;
         .links-of-author-item
           width: 36px;
           height: 36px;

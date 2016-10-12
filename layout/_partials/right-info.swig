@@ -23,6 +23,17 @@
         {% endfor %}
       {% endif %}
     </div>
-
-</div>
+  </div>
+  {% if theme.friends %}
+  <div class="friend-links">
+    <h5>FRIEND LINKS</h5>
+    {% for name, link in theme.friends %}
+      {% if name == 'tip' %}
+        <div class="tip">{{ link }}</div>
+      {% else %}
+        <a href="{{ link }}" target="_blank" title="{{ name }}">{{ name }}</a>
+      {% endif %}
+    {% endfor %}
+  <div>
+  {% endif %}
 </div>

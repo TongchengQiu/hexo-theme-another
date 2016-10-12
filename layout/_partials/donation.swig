@@ -40,6 +40,5 @@
     <div class="img-box">
       <img src="{{theme.donation}}" alt="donation" />
     </div>
-    </style>
   </div>
 {% endif %}

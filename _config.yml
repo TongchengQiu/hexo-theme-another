@@ -6,18 +6,22 @@ menu:
   tags: /tags
   about: /about
 
+# the author and email
 # 博客作者和email
 author: TongchengQiu
 email: TongchengQiu@gmail.com
 
-# 捐赠
-donation: /img/
+# the picture of donation
+# Place your donation.png to /source directory.
+# 捐赠 ( 需要把图片放到 /source directory. )
+donation: /img/donation.png
 
 # Place your favicon.ico to /source directory.
 # 网站图标－在 /source 文件夹下
 favicon: /favicon.ico
 
 # avatar
+# Place your avatar.jpg to /source directory.
 # 个人头像图片 /source 文件夹下
 avatar: /img/qtc_avatar.jpg
 
@@ -30,9 +34,11 @@ keywords: "^_^"
 # Set rss to specific value if you have burned your feed already.
 rss:
 
+# the date of setting up the blog
 # 网站成立日期
 birth_day: 10/04/2015
 
+# the year of setting up the blog
 # 成立的年
 since: 2015
 
@@ -48,15 +54,16 @@ auto_excerpt:
   enable: true
   length: 200
 
-# 各种网站验证的验证码
-google_site_verification: UA-78049587-1
-baidu_site_verification: fRBucd9VmI
-baidu_gxt_verify_token: ca8f032797b876ef3be37c3d492168a0
+# virification code of baidu & google
+# baidu & google 网站验证的验证码
+google_site_verification: xxxxxxxxxx
+baidu_site_verification: xxxxxxxxxx
 
-# 百度分析验证码
-baidu_analytics: 47d302b006bf28a09c22990da53cd3da
+# baidu & google analytics code
+# 百度分析
+baidu_analytics: xxxxxxxxxx
 # google 分析
-google_analytics: UA-78049587-1
+google_analytics: xxxxxxxxxx
 
 # Make duoshuo show UA
 # user_id must NOT be null when admin_enable is true!
@@ -65,9 +72,9 @@ google_analytics: UA-78049587-1
 duoshuo_info:
   ua_enable: true
   admin_enable: false
-  user_id: qiutongcheng
-  admin_nickname: qiutc
-duoshuo_shortname: qiutongcheng
+  user_id: xxxxxxxxxx
+  admin_nickname: xxxxxxxxxx
+duoshuo_shortname: xxxxxxxxxx
 
 # 如果你需要 disqus 的配置，请把上面的多说的配置注释或者去掉，加上
 # disqus_shortname: your...
@@ -79,6 +86,12 @@ social:
   twitter: https://twitter.com/tongchengqiu
   zhihu: http://www.zhihu.com/people/tongchengqiu
   weibo: http://weibo.com/tongchengqiu
+
+# firend links
+# 友链
+friends:
+  阿城的blog: http://qiutc.me
+  tip: (欢迎交换友链)
 
 # Use Lato font
 # Note: this option is avialable only when the language is not `zh-Hans`
@@ -94,4 +107,4 @@ images: images
 
 # Theme version
 # 主题版本
-version: 0.0.1
+version: 0.0.2

@@ -20,9 +20,9 @@
 
 {# 作者信息 #}
 {% if theme.author && theme.email %}
-<meta name="author" content="theme.author, theme.email">
-<meta name="reply-to" content="theme.email">
-<meta name="owner" content="theme.author">
+<meta name="author" content="{{ theme.author }}, {{ theme.email }}">
+<meta name="reply-to" content="{{ theme.email }}">
+<meta name="owner" content="{{ theme.author }}">
 {% endif %}
 
 {# 谷歌分析验证 #}
@@ -33,11 +33,6 @@
 {# 百度分析验证 #}
 {% if theme.baidu_site_verification %}
 <meta name="baidu-site-verification" content="{{ theme.baidu_site_verification }}" />
-{% endif %}
-
-{# 百度分析验证 #}
-{% if theme.baidu_gxt_verify_token %}
-<meta name="baidu-gxt-verify-token" content="{{ theme.baidu_gxt_verify_token }}" />
 {% endif %}
 
 {# description #}
